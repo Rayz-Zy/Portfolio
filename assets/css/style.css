@@ -1,0 +1,45 @@
+/* Portfolio Card Styles */
+.portfolio-card {
+    display: block;
+    position: relative;
+    width: 100%;
+    max-width: 350px;
+    height: 220px;
+    margin: 0 auto 2em auto;
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 0 2px 16px rgba(0,0,0,0.12);
+    transition: transform 0.2s;
+    text-decoration: none;
+}
+.portfolio-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.3s;
+}
+.portfolio-card:hover img {
+    transform: scale(1.05);
+    filter: brightness(0.7);
+}
+.portfolio-overlay {
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(30,30,40,0.45);
+    color: #fff;
+    opacity: 1;
+    transition: background 0.3s;
+    text-align: center;
+    pointer-events: none;
+}
+.portfolio-card h3 {
+    margin: 0;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.5);
+}
+
